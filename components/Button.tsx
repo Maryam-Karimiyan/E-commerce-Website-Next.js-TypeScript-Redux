@@ -1,9 +1,13 @@
 import { Button, ButtonProps } from "@mui/material";
-interface CustomButtonProps extends ButtonProps {
+interface CustomButtonProps {
   text?: string;
   onClick?: () => void;
 }
-const ButtonComponent:React.FC<CustomButtonProps> = ({ text, onClick, ...props }: CustomButtonProps) => {
+const ButtonComponent: React.FC<CustomButtonProps> = ({
+  text,
+  onClick,
+  ...props
+}) => {
   return (
     <Button onClick={onClick} {...props}>
       {text}
