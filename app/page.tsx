@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <TextFieldComponent label="UserName" />
-      <TextFieldComponent label="Password" type="password" />
+      <TextFieldComponent label="Password" type="password"/>
       <ButtonComponent color="primary" text="llll" variant="contained" />
     </main>
   );
